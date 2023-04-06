@@ -5,6 +5,7 @@
 
 #include "myeventfilter.h"
 
+
 int isBig()
 {
     QByteArray ba;
@@ -39,6 +40,7 @@ int main(int argc, char *argv[])
     a.installNativeEventFilter(&evtFilter);
 
     qDebug() << "is big:" << isBig();
+
 
     MainWindow w;
     w.show();
